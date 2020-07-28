@@ -1,5 +1,4 @@
 
-// JS实现头部透明变黑色
 window.onscroll = function () {
     var header = document.getElementById("nav");
     var fixed = window.pageYOffset || document.documentElement.scrollTop;

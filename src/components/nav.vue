@@ -2,13 +2,11 @@
   <div id="nav">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="#top">My Resume</b-navbar-brand>
-
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">个人简介</b-nav-item>
-          <b-nav-item href="#">专业技能</b-nav-item>
+          <b-nav-item href="#introduce">个人简介</b-nav-item>
+          <b-nav-item href="#skill">专业技能</b-nav-item>
           <b-nav-item href="#">工作经历</b-nav-item>
           <b-nav-item href="#">项目经历</b-nav-item>
         </b-navbar-nav>

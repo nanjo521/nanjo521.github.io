@@ -8,7 +8,8 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Nav from './components/nav.vue'
-import './assets/changeColor'
+import './assets/change'
+
 
 export default {
   name: 'App',

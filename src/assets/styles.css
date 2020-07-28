@@ -228,3 +228,67 @@ body{
 		        transform:translate(0,-20px) rotate(-5deg);
 	}
 }
+
+#button{
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 1;
+    color: white;
+}
+
+#button::before{
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: -5px;
+    bottom: -5px;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 50px;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+#button:hover::before{
+    animation: sun 8s infinite;
+}
+
+#button:hover{
+    animation: sun 8s infinite;
+}
+
+@keyframes sun{
+    100%{
+        background-position: -400% 0;
+    }
+}
+
+.box2 .row{
+	margin-left: 0;
+	margin-right: 0;
+	justify-content: center;
+}
+
+.box3{
+	text-align: left;
+}
+
+.blue{
+	background-image: linear-gradient(312deg, #2ecbff 0%, #00a0ff 100%);
+}
+
+.whiteFont{
+	color: white;
+}

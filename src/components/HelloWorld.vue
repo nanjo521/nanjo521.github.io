@@ -53,7 +53,7 @@
                       </b-col>
                       <b-col cols="18" md="6">
                         <strong>工作经验:</strong>
-                        <span>1年</span>
+                        <span>一年</span>
                       </b-col>
                       <div class="w-100"></div>
                       <b-col cols="18" md="6">
@@ -62,7 +62,7 @@
                       </b-col>
                       <b-col cols="18" md="6">
                         <strong>到岗时间:</strong>
-                        <span>1周内</span>
+                        <span>随时到岗</span>
                       </b-col>
                       <div class="w-100"></div>
                       <b-col cols="18" md="6">
@@ -138,14 +138,16 @@
       </div>
       <div class="section blue">
         <div class="box4">
-
+          <template>
+            <div>
+              <workex></workex>
+            </div>
+          </template>
         </div>
       </div>
       <div class="section blue">
         <div class="box5">
-
-
-
+          <project></project>
         </div>
       </div>
     </full-page>
@@ -153,11 +155,14 @@
 </template>
 
 <script>
+import workex from "../assets/views/workex";
+import project from "../assets/views/project";
+
 export default {
   name: "",
   data() {
     return {
-      balloon:this.$store.state.balloon,
+      balloon: this.$store.state.balloon,
       options: {
         licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
         afterLoad: this.afterLoad,
@@ -181,6 +186,10 @@ export default {
         // ],
       },
     };
+  },
+  components: {
+    workex,
+    project
   },
 };
 </script>
@@ -237,5 +246,18 @@ export default {
   text-indent: 2em;
   text-align: justify;
   opacity: 0.8;
+}
+
+.box2,
+.box3,
+.box4,
+.box5 {
+  height: 100vh;
+  background-image: url("../assets/wallhaven-nzr13j.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
